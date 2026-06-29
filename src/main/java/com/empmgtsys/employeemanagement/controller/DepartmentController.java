@@ -43,4 +43,10 @@ public class DepartmentController {
         return service.updateDepartment(Id,request);
     }
 
+    @DeleteMapping("/deleteall")
+    public String deleteAllDepartment(){
+        service.deleteAllDepartment();
+        return "All the Departsments are Deleted Successfully";
+    }
+
 }

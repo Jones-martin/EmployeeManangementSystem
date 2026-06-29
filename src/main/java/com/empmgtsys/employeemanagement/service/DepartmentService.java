@@ -15,10 +15,12 @@ public interface DepartmentService {
     DepartmentResponse getDepartmentById(Integer id);
 
     List<DepartmentResponse> getAllDepartment();
-    
+
     DepartmentResponse updateDepartment(Integer id, DepartmentRequest request);
 
     void deleteDepartment(Integer id);
+
+    void deleteAllDepartment();
 
 
 }

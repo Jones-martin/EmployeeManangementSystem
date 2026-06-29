@@ -70,4 +70,11 @@ public class DepartmentServiceImplementation implements DepartmentService
         repository.delete(dept);
 
     }
+
+    @Override
+    public void deleteAllDepartment() {
+        repository.deleteAll();
+    }
+
+
 }
