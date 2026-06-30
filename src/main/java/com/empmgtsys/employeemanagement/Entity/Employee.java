@@ -25,8 +25,7 @@ public class Employee {
     private String password;
     private String phone;
     private BigDecimal salary;
-
-    private Integer deptId;
+    
     @ManyToOne
     @JoinColumn(name = "department_id")
     private Department department;

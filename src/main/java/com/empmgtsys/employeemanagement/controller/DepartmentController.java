@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/department")
+@RequestMapping("department")
 public class DepartmentController {
     private final DepartmentService service;
 
@@ -20,8 +20,8 @@ public class DepartmentController {
 
     @PostMapping("/create")
     public DepartmentResponse createDepartment(@RequestBody DepartmentRequest request){
-        return service.createDepartment(request);
-    }
+        return  service.createDepartment(request);
+     }
 
     @GetMapping("/all")
     public List<DepartmentResponse> getAllDepartment(){
