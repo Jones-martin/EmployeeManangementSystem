@@ -14,7 +14,7 @@ public interface EmployeeService {
     EmployeeResponse getEmployeeById(Integer id);
     List<EmployeeResponse> getEmployeeByDept(String dept);
     EmployeeResponse getEmployeeByEmail(String email);
-    List<EmployeeResponse> getEmployeeByRole(Integer role);
+    EmployeeResponse getEmployeeByRole(Integer role);
 
 
 }

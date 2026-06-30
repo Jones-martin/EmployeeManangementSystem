@@ -187,12 +187,12 @@ public class EmployeeServiceImplementation implements EmployeeService {
 
 
     @Override
-    public List<EmployeeResponse> getEmployeeByRole(Integer role) {
+    public EmployeeResponse getEmployeeByRole(Integer role) {
         List<Employee> emp = employeeRepository.findAll();
-        List<EmployeeResponse> empRes = new ArrayList<>();
+
         for(Employee e: emp){
             if((e.getRole().getId()).equals(role)) {
-                empRes.add(new EmployeeResponse(
+                return (new EmployeeResponse(
                         e.getId(),
                         e.getName(),
                         e.getEmail(),
@@ -204,6 +204,6 @@ public class EmployeeServiceImplementation implements EmployeeService {
                 ));
             }
         }
-        return empRes;
+        return new EmployeeResponse();
     }
     }

@@ -25,7 +25,6 @@ public class Employee {
     private String password;
     private String phone;
     private BigDecimal salary;
-
     private LocalDate joiningDate;
 
     @ManyToOne
