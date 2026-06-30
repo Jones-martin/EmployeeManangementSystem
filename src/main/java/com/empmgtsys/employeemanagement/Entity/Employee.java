@@ -25,7 +25,9 @@ public class Employee {
     private String password;
     private String phone;
     private BigDecimal salary;
-    
+
+    private LocalDate joiningDate;
+
     @ManyToOne
     @JoinColumn(name = "department_id")
     private Department department;
@@ -33,4 +35,6 @@ public class Employee {
     @ManyToOne
     @JoinColumn(name = "role_id")
     private Role role;
+
+
 }
